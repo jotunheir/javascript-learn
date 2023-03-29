@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<body class="content">
+    <script>
+        function isEmpty(obj) {
+            for (let prop in obj) {
+                return false;
+            }
+            return true;
+        }
+
+        let schedule = {};
+        alert( isEmpty(schedule) );
+        schedule["8:30"] = "get up";
+        alert( isEmpty(schedule) );
+    </script>
+</body>
