@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<body class="content">
+    <script>
+        // function readNumber() {
+        //     let num;
+
+        //     do {
+        //         num = prompt("Введите число", 0);
+        //     } while (!isFinite(num)); // почему здесь мы проверяем на бесконечность? 
+
+        //     if (num === null || num === '') return null;
+
+        //     return +num;
+        // }
+
+        // alert(`Число: ${readNumber()}`);
+
+        // readNumber();
+
+
+        function readNumber() {
+            let num = +prompt("Введите число", 0);
+
+            while (isNaN(num) === true) {
+                let num = +prompt("Введите число", 0);
+            }
+
+            alert(`Число: ${readNumber()}`);
+        }
+        
+    </script>
+</body>
